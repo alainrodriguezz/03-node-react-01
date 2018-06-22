@@ -13,7 +13,7 @@ module.exports = (app)=>{
 	// Logged in
 	app.get('/api/current_user',(req,res)=>{
 		//res.send(req.session) //This is the User ID
-		//res.send(req.user);
+		res.send(req.user);
 	});
 
 	// Logout
